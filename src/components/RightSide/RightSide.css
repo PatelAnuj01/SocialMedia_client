@@ -1,0 +1,71 @@
+.RightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Adjusted the padding and spacing to ensure equal spacing on all sides */
+.navIcon {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+
+.navIcon>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.navIcon>a>img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.r-button {
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+}
+
+.about-section {
+    background: linear-gradient(to right, #f6f8ff, #e6f0ff);
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .about-section h3 {
+    text-align: center;
+    color: #ff6600;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .about-section p {
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .about-section ul {
+    padding-left: 18px;
+  }
+  
+  .about-section li {
+    margin-bottom: 12px;
+    font-size: 14.5px;
+    line-height: 1.5;
+    position: relative;
+  }
+  
+  .about-section li::before {
+    position: absolute;
+    left: -18px;
+    top: 3px;
+  }
+  
