@@ -8,8 +8,8 @@ export const login = (fromData) => async(dispatch) => {
         dispatch({type: "AUTH_SUCCESS", data: data})
     } catch (error) {
         console.error(error)
-        dispatch({type: "AUTH_FAIL"})
-    } 
+        dispatch({type: "AUTH_FAIL", payload: error.response?.data || "Login failed"})
+    }
 }
 
 export const signUp = (fromData) => async(dispatch) => {

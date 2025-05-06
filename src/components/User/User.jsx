@@ -7,10 +7,14 @@ const User = ({ person }) => {
   const { user } = useSelector((state) => state.authReducer.authData);
   const dispatch = useDispatch();
 
+  
+
   const [following, setFollowing] = useState(
     person.followers.includes(user._id)
   );
 
+  if (person._id === user._id) return null;
+  
   const handleFollow = () => {
     following
       ? dispatch(unfollowUser(person._id, user))
