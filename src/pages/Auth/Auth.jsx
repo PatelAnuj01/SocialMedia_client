@@ -119,7 +119,7 @@ const Auth = () => {
 
                 <div>
                     <span style={{ fontSize: "12px", cursor: "pointer" }} onClick={() => {setIsSignUp((prev) => !prev); resetForm()}}>
-                        {isSignUp ? "Already have an account. Log in!": "Don't have an account? Sign Up"}
+                        {isSignUp ? "Already have an account. Log in": "Don't have an account? Sign Up"}
                     </span>
                 </div>
                 <button className="button infoButton" type="submit" disabled={loading}>
